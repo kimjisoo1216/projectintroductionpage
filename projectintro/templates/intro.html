@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>프로젝트를 소개하는 페이지입니다.</title>
+</head>
+<body>
+    <header>
+        <center><h1>프로젝트 소개</h1>
+                <div>
+                    <h3><ins>목차</ins></h3>
+                        <p>1. 제안아이디어</p>
+                        <p>2. 아이디어 세부설명</p>
+                        <p>3. 시나리오</p>                    
+                </div>
+        </center>        
+    </header>
+<hr>
+<div>
+    <div style="display:inline-block; float:left">
+        <h3 style="display:inline-block"><mark>1. 제안아이디어</mark></h3>
+        <br>
+        <br>
+            <table border="1">
+                <tr>
+                    <td>목적</td>
+                    <td colspan="5">물류창고와 같은 체계적인 보관장소에서 찾고자 하는 물건의 위치를 알려주는 것.</td>
+                </tr>
+                <tr>
+                    <td>기능</td>
+                    <td colspan="5">
+                        <ol>
+                            <li>소리센서와 발광센서를 부착한 칩을 블루투스를 이용한 모바일 기기와 연동한다.</li>
+                            <li>물건 보관시 칩을 외부에 부착한 후 어플리케이션에서 해당 칩을 호출한다.</li>
+                            <li>GPS기능으로 칩의 정확한 주소를 알려주고 그 주소 내 10m 일정반경 안으로<br>들어오게되면소리와 빛으로 보관된 위치를 대략적으로 알려준다.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>기대성과</td>
+                    <td colspan="5">큰 건물이나 창고같은 장소에서 어떤 특정물건을 찾고 싶을 때 소리와 빛을 통해 쉽게 찾을수 있다.</td>
+
+                </tr>
+                <tr>
+                    <td>사용부품</td>
+                    <td colspan="5">아두이노 나노, 브레드보드, HC-06(블루투스모듈), LED, BUZZER, Neo-6M, smartphone, mini-b usb</td>
+                </tr>
+                <tr>
+                    <td>운영체제</td>
+                    <td>Window 10</td>
+                    <td>개발언어</td>
+                    <td>Java, Serial언어</td>
+                    <td>소프트웨어</td>
+                    <td><a href="https://www.eclipse.org/downloads/">이클립스</a></td>
+                </tr>
+            </table>
+    </div>
+        
+        <h3 style="display:inline-block; margin-left:10em"><mark>2. 아이디어 세부설명</mark></h3>
+        <div style="text-align:right">
+        {% load staticfiles %}  
+        <br>
+        <img src="{% static '1.jpg' %}" alt="image" width=15% height=20% >         
+        <img src="{% static '2.jpg' %}" alt="image" width=15% height=20% >     
+        <img src="{% static '3.jpg' %}" alt="image" width=15% height=20% ><br> 
+        <img src="{% static '4.jpg' %}" alt="image" width=15% height=20% >
+        </div>
+    
+        <h3 style="display:inline-block; float:left"><mark>3. 시나리오</mark></h3>
+        <br>
+        <br>
+        <div style="display:inline-block">
+        {% load staticfiles %}       
+        <img src="{% static 'sina.png' %}" alt="image" width=30% height=20%>  
+        </div>
+
+</body>
+</html>
